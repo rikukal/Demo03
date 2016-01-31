@@ -10,10 +10,10 @@ namespace T4_Vehicle
     {
         static void Main(string[] args)
         {
-            Vehicle vehicle = new Vehicle();
-            vehicle.Name = " Kaara";
-            vehicle.Speed = 0;
-            vehicle.Tyres = 4;
+            Vehicle vehicle = new Vehicle();    // Isolla kirjaimella kutsutaan luokasta olevaa oliota, pienikirjaiminen on oliolle annettu nimi
+            vehicle.Name = " Kaara ";    // isolla Name viittaa luokan Vehicle Name-ominaisuuteen, jolle on annettu "Name"-arvoksi "Kaara" 
+            vehicle.Speed = 0;          
+            vehicle.Tyres = 4;          // Olion Tyres-ominaisuudelle on annettu oletusarvoksi 4
             vehicle.PrintData(); 
 
             // metodit, eli olion toiminnot	(methods)
