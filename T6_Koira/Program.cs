@@ -28,7 +28,18 @@ namespace T6_Koira
             Boisterous
         } */
 
-        Console.WriteLine(dog.ToString());
+       /* public void Swing_tail()
+        {
+            Tailspeed += 3;
+        }
+
+        public void Swing_less()
+        {
+            Tailspeed -= 3;
+        }*/
+
+
+   Console.WriteLine(dog.ToString());
 
             Console.ReadLine();
     }

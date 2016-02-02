@@ -12,7 +12,7 @@ namespace T6_Koira
         public string Breed { get; set; }   //rotu
         public int Age { get; set; }
         //public enum Volume { get; set; } //Bark_more or Calm asteet: silent, quiet, bit noisy, loud, boisterous ENUM?
-        public int Tailspeed { get; set; } // Swinging tail , Stop , swing less
+        public int Tailspeed { get; set; } // Swinging tail, swing less
         public bool Drooling { get; set;}   //kuolaako vai ei? - oletus että kuolaisi  
 
         // default constructor
@@ -29,6 +29,10 @@ namespace T6_Koira
             Console.WriteLine("{0}", Tailspeed);
             Console.WriteLine("{0}", Drooling);
         }
+
+        
+
+
         public override string ToString()
         {
             return "Name: " + Name + " Age: " + Age + /*" Volume: "+ Volume + */" Tailspeed: " + Tailspeed + "Is drooling:" + Drooling;
