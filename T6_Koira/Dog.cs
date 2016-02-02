@@ -24,14 +24,12 @@ namespace T6_Koira
         {
             Console.WriteLine(" Dog info:");
             Console.WriteLine(" Name: {0}", Name);
+            Console.WriteLine(" Breed: {0}", Breed);
             Console.WriteLine(" Age {0}", Age);
             //Console.WriteLine(" Volume: {0}",Volume);
             Console.WriteLine("{0}", Tailspeed);
             Console.WriteLine("{0}", Drooling);
         }
-
-        
-
 
         public override string ToString()
         {

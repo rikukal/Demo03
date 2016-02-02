@@ -12,6 +12,7 @@ namespace T6_Koira
         {
             Dog dog = new Dog();
             dog.Name = "Musti";
+            dog.Breed = "Golden Retriever";
             dog.Age = 3;
             //dog.Volume = "quiet";
             dog.Tailspeed = 3;
@@ -39,8 +40,8 @@ namespace T6_Koira
         }*/
 
 
-   Console.WriteLine(dog.ToString());
+  // Console.WriteLine(dog.ToString());
 
-            Console.ReadLine();
+           // Console.ReadLine();
     }
 }
