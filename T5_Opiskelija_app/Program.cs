@@ -11,45 +11,22 @@ namespace T5_Opiskelija_app
         static void Main(string[] args)
         {
             Opiskelija opiskelijat[] = new Opiskelija[5];
-            opiskelijat[0] = new Opiskelija();
+            opiskelijat[0] = new Opiskelija { Nimi = "Riku", Ika = 20, Opintopisteet = 60, Opiskeluala = "tieto ja viestinta-tekniikka", Insinoori = true };
+            opiskelijat[1] = new Opiskelija { Nimi = "Kalle", Ika = 23, Opintopisteet = 23, Opiskeluala = "hyvinvointiteknologia", Insinoori = true };
+            opiskelijat[2] = new Opiskelija { Nimi = "Iina", Ika = 19, Opintopisteet = 100, Opiskeluala = "sairaanhoitaja", Insinoori = false };
+            opiskelijat[3] = new Opiskelija { Nimi = "Susanna", Ika = 27, Opintopisteet = 100, Opiskeluala = "energia ja ymparisto-tekniikka", Insinoori = true };
+            opiskelijat[4] = new Opiskelija { Nimi = "Kerttu", Ika = 57, Opintopisteet = 120, Opiskeluala = "fysioterapeutti", Insinoori = false };
 
-            /*  opiskelijat[0].Nimi = "Riku";
-              opiskelijat[1].Nimi = "Kalle";
-              opiskelijat[2].Nimi = "Iina";
-              opiskelijat[3].Nimi = "Susanna";
-              opiskelijat[4].Nimi = "Kerttu"; */
+            // ominaisuudet lajitellaan luokan (Opiskelija[ISOLLA]) arvo (opiskelijat) [n.luku] = new luokka(Opiskelija) { ominaisuus = "ominaisuuden arvo" , ominaisuus2 ... };
+            //ei siis erikseen ilman new Student - jakoa 
+            foreach (Opiskelija opiskelija in opiskelijat)
+            {
+                Console.Write(opiskelija.ToString());
+                Console.WriteLine();
+            }
 
-            /*    opiskelijat[0].Ika = 20 ;
-                opiskelijat[1].Ika = 23 ;
-                opiskelijat[2].Ika = 19 ;
-                opiskelijat[3].Ika = 27 ;
-                opiskelijat[4].Ika = 57 ; */
-
-            /*  opiskelijat[0].Opintopisteet = 60;
-              opiskelijat[1].Opintopisteet = 23;
-              opiskelijat[2].Opintopisteet = 100;
-              opiskelijat[3].Opintopisteet = 100;
-              opiskelijat[4].Opintopisteet = 120; */
-
-            /*  opiskelijat[0].Opiskeluala = "tieto ja viestinta-tekniikka";
-                opiskelijat[1].Opiskeluala = "hyvinvointiteknologia";
-                opiskelijat[2].Opiskeluala = "sairaanhoitaja";
-                opiskelijat[3].Opiskeluala = "energia ja ymparisto-tekniikka";
-                opiskelijat[4].Opiskeluala = "fysioterapeutti"; */
-
-
-            /* opiskelijat[0].Insinoori = true;
-             opiskelijat[1].Insinoori = true;
-             opiskelijat[2].Insinoori = false;
-             opiskelijat[3].Insinoori = true;
-             opiskelijat[4].Insinoori = false; */
-
-            /*for (int i = 0; i < opiskelijat.Length; i++) Console.WriteLine(opiskelijat[i]);*/
-
-            /*foreach ( Opiskelija opiskelija in opiskelijat)
-            { student.PrintData();
-            }*/
-
+            Console.WriteLine("Paina Enteriä jatkaaksesi...");
+            Console.ReadLine();
         }
     }
 }

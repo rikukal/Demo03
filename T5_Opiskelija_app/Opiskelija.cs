@@ -10,10 +10,10 @@ namespace T5_Opiskelija_app
     {
         //ominaisuudet (properties) Isolla Alkukirjaimella!
         public string Nimi { get; set; }
-        public string Ika { get; set; }
-        public string Opintopisteet { get; set; }
+        public int Ika { get; set; }
+        public int Opintopisteet { get; set; }
         public string Opiskeluala { get; set; }
-        public string Insinoori { get; set; }
+        public bool Insinoori { get; set; }
         public override string ToString()
         {
 
